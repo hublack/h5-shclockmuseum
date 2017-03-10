@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>参观预约</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        var fontSize = parseInt(document.documentElement.clientWidth)/10;
+        document.querySelector("html").style.fontSize = fontSize+"px";
+    </script>
+</head>
+<body>
+
+    <div class="main-bg">
+        <img class="bg-img" src="img/bg.jpg" alt="">
+    </div>
+    <div class="head">
+        <img class="head-logo" src="img/logo.png" alt="">
+    </div>
+
+    <div class="title-box">
+        <p class="main-title">请填写预约信息</p>
+    </div>
+
+    <div class="container">
+        <form class="container-form" action="">
+            <p>姓名:</p>
+            <input class="username" type="text">
+            <p>手机号码:</p>
+            <input class="phone" type="text">
+            <p>预约时间:</p>
+            <input class="dater" type="text" placeholder="日期(例:3号)">
+            <input class="timer" type="text" placeholder="时间(例:10点)">
+            <p class="hint">开馆时间:10:00 - 17:00 周一闭馆</p>
+            <p class="shape">形式:</p>
+            <input type="radio" class="team" name="person"> 团体
+            <input type="radio" class="single" name="person"> 个人
+
+            <p class="teamNumber">团体人数:</p>
+            <input type="text" class="team-number">
+
+            <p class="express">是否需要解说:</p>
+            <input type="radio" class="yes" name="explain"> 是
+            <input type="radio" class="no" name="explain"> 否
+
+            <p class="pre-items">预约体验项目:</p>
+            <select name="list" class="list-one">
+                <option value="">请选择</option>
+                <option value="">机芯组装与定制</option>
+                <option value="">表带制作</option>
+            </select>
+            <p class="pre-times">项目预约时间:</p>
+            <select name="times" class="list-two">
+                <option value="">请选择</option>
+                <option value="">10:00-11:00</option>
+                <option value="">11:00-12:00</option>
+                <option value="">14:00-15:00</option>
+                <option value="">15:00-16:00</option>
+            </select>
+
+            <input type="button" class="over" value="提交">
+
+            <div class="remind-box">
+                <div class="remind-one">请填写姓名！</div>
+                <div class="remind-two">请填写正确的手机号码！</div>
+                <div class="remind-three">请填写正确的预约时间！</div>
+                <div class="remind-four">请选择形式！</div>
+                <div class="remind-five">请正确填写团体人数！</div>
+                <div class="remind-six">请选择是否需要解说！</div>
+                <div class="remind-seven">请选择体验项目！</div>
+                <div class="remind-eight">请选择项目预约时间！</div>
+                <div class="remind-nine">请填写预约信息！</div>
+                <div class="remind-ten">请填写正确的预约时间！</div>
+            </div>
+        </form>
+    </div>
+
+    <div class="textBox">
+        <p>预约成功,</p>
+        <p>我们的客服将会在</p>
+        <p>24 小时内联系您</p>
+    </div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+</html>
